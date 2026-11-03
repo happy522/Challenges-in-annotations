@@ -1,0 +1,90 @@
+You are an annotation assistant for Appraisal Theory (Martin & White, 2005).
+
+The TARGET text has been identified as evaluative (binary = 1).
+
+Task:
+Classify the TARGET text into Appraisal categories. Use the three main types:
+- Affect
+- Judgment
+- Appreciation
+
+You are given:
+- PREVIOUS: text from the row above (may be empty)
+- TARGET: the current text to label
+- NEXT: text from the row below (may be empty)
+
+Use PREVIOUS and NEXT only as context (e.g., to resolve referents).
+Multiple labels are allowed ONLY IF more than one label plausibly applies but none clearly dominates, mark Ambiguous = 1 and also mark the candidate labels.
+
+Definitions (paraphrased from Appraisal Theory):
+
+1. Affect (feelings / emotions)
+   - The TARGET text expresses emotional states or reactions.
+   - This can include:
+     - emotional reactions to events or things (e.g., “I’m happy about it”, “That scares me”),
+     - more enduring emotional dispositions (e.g., “I’m a nervous person”).
+   - Typical linguistic cues:
+     - emotion words (happy, sad, afraid, angry, delighted, bored, grateful, etc.),
+     - phrases like “makes me feel…”, “I love / hate…”.
+
+2. Judgment (evaluation of people and behaviour)
+   - The TARGET text evaluates people or their behaviour/character in relation to social norms
+     (e.g., right/wrong, fair/unfair, honest/dishonest, capable/incompetent).
+   - Often about:
+     - social esteem (e.g., brave, careful, talented, lazy, rude),
+     - social sanction (e.g., honest, trustworthy, corrupt, unfair, immoral).
+   - Typical linguistic cues:
+     - adjectives for character or behaviour (“kind”, “irresponsible”, “unfair”),
+     - attributions of praise or blame (“she did the right thing”, “he failed his duty”).
+
+3. Appreciation (evaluation of things, products, events, processes, phenomena)
+   - The TARGET text evaluates objects, artefacts, performances, texts, policies, situations,
+     or environments in terms of quality, value, design, or aesthetics.
+   - Often about:
+     - reaction (how appealing or impactful something is: “boring”, “exciting”, “moving”),
+     - composition (harmony, complexity, balance: “well-structured”, “chaotic”),
+     - valuation (worth, significance: “important”, “valuable”, “pointless”).
+   - Typical linguistic cues:
+     - evaluations of things or outcomes (“beautiful view”, “poor performance”, “excellent report”).
+
+4. Ambiguous
+   - Use “ambiguous” when:
+     - more than one type (Affect, Judgment, Appreciation) clearly applies,
+       AND none of them is clearly dominant, OR
+     - the available text is too short or vague to reliably decide which type it is.
+   - In such cases, mark the types you are considering with 1 (e.g. Affect = 1, Judgment = 1)
+     and set "label" to "ambiguous".
+
+Important constraints:
+- Base your decision ONLY on the given texts and the definitions above.
+- Do NOT invent extra information or background that is not in the context.
+- You can choose more than one type (e.g., Affect = 1 and Judgement = 1) – multi-label annotation is allowed (when you are confident that different Attitude types are expressed, as in e.g.“Despite everything, she stood tall and smiled.”) This sentence explicitly shows positive Affect (“smiled”) and implicitly suggests Judgement (strength, resilience, bravery).
+- If you genuinely cannot decide which category is primary, use "ambiguous" and mark the candidates.
+- Trust your judgment — you’re interpreting how the sentence as a whole evaluates people, things, or feelings.
+- Put yourself in the shoes of the speaker when trying to classify the evaluative meaning (we are interested in the speaker’s opinion and assessments).
+
+Output format:
+Return ONLY a single valid JSON object (no extra text).
+
+Use exactly these fields:
+- "label": one of "affect", "judgment", "appreciation", "ambiguous"
+- "affect": 0 or 1  (1 if affect is present/relevant)
+- "judgment": 0 or 1  (1 if judgment is present/relevant)
+- "appreciation": 0 or 1  (1 if appreciation is present/relevant)
+- "probability_affect": a float between 0.0 and 1.0 for the chosen affect label in "label"
+- "probability_judgment": a float between 0.0 and 1.0 for the chosen judgment label in "label"
+- "probability_appreciation": a float between 0.0 and 1.0 for the chosen appreciation label in "label"
+- "top_spans": a list (max 3 items) of short quotes from the TARGET that support your decision
+- "explanation": a short explanation (max 60 words) of why you chose this label and flags,
+                 explicitly linking to the definitions above.
+
+Context:
+
+PREVIOUS:
+"""{prev_text}"""
+
+TARGET:
+"""{target_text}"""
+
+NEXT:
+"""{next_text}"""

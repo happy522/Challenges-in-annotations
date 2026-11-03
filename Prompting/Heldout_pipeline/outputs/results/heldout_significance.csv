@@ -1,0 +1,13 @@
+step,model_a,model_b,macro_f1_diff (a - b),p_randomization,only_a_correct,only_b_correct,p_mcnemar,p_randomization_holm,p_mcnemar_holm
+1 binary (all test sentences),llama-3.3-70b-instruct,mistral-large-instruct,-0.014485152690377978,0.7961203879612039,7,9,0.803619384765625,1.0,1.0
+1 binary (all test sentences),llama-3.3-70b-instruct,qwen3-30b-a3b-instruct-2507,0.018775322616616297,0.5541445855414459,12,10,0.8318119049072266,1.0,1.0
+1 binary (all test sentences),mistral-large-instruct,qwen3-30b-a3b-instruct-2507,0.033260475306994275,0.30146985301469853,10,6,0.454498291015625,0.9044095590440956,1.0
+combined binary + appraisal (none / affect / judgment / appreciation),llama-3.3-70b-instruct,mistral-large-instruct,-0.1337050171795936,0.0122987701229877,7,19,0.028959274291992188,0.0368963103689631,0.08687782287597656
+combined binary + appraisal (none / affect / judgment / appreciation),llama-3.3-70b-instruct,qwen3-30b-a3b-instruct-2507,0.0021329924090871533,0.9646035396460354,14,14,1.0,0.9646035396460354,1.0
+combined binary + appraisal (none / affect / judgment / appreciation),mistral-large-instruct,qwen3-30b-a3b-instruct-2507,0.13583800958868075,0.0174982501749825,20,8,0.03569813817739487,0.0368963103689631,0.08687782287597656
+1 binary (all test sentences),mistral-large-instruct + qwen3-30b-a3b-instruct-2507,llama-3.3-70b-instruct,0.014485152690377978,0.7904209579042096,9,7,0.803619384765625,1.0,1.0
+1 binary (all test sentences),mistral-large-instruct + qwen3-30b-a3b-instruct-2507,mistral-large-instruct,0.0,1.0,0,0,1.0,1.0,1.0
+1 binary (all test sentences),mistral-large-instruct + qwen3-30b-a3b-instruct-2507,qwen3-30b-a3b-instruct-2507,0.033260475306994275,0.29247075292470753,10,6,0.454498291015625,0.8774122587741227,1.0
+combined binary + appraisal (none / affect / judgment / appreciation),mistral-large-instruct + qwen3-30b-a3b-instruct-2507,llama-3.3-70b-instruct,0.005992255992256057,0.8933106689331067,12,11,1.0,1.0,1.0
+combined binary + appraisal (none / affect / judgment / appreciation),mistral-large-instruct + qwen3-30b-a3b-instruct-2507,mistral-large-instruct,-0.12771276118733754,0.0183981601839816,4,15,0.0192108154296875,0.0551944805519448,0.0576324462890625
+combined binary + appraisal (none / affect / judgment / appreciation),mistral-large-instruct + qwen3-30b-a3b-instruct-2507,qwen3-30b-a3b-instruct-2507,0.00812524840134321,0.714028597140286,5,4,1.0,1.0,1.0

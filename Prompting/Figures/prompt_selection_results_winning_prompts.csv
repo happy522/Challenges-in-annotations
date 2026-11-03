@@ -1,0 +1,7 @@
+﻿task,prompt,model,macro_f1,accuracy,cohen_kappa,krippendorff_alpha
+Evaluative (binary),V3,Qwen3-30B,0.740 ± 0.010,0.740 ± 0.011,0.480 ± 0.021,0.481 ± 0.021
+Evaluative (binary),V3,Llama-3.3-70B,0.743 ± 0.016,0.743 ± 0.016,0.486 ± 0.032,0.486 ± 0.033
+Evaluative (binary),V3,Mistral-Large,0.764 ± 0.012,0.764 ± 0.012,0.528 ± 0.024,0.529 ± 0.025
+Subclasses (appraisal),V2,Qwen3-30B,0.594 ± 0.017,0.562 ± 0.010,0.361 ± 0.015,0.349 ± 0.020
+Subclasses (appraisal),V2,Llama-3.3-70B,0.583 ± 0.024,0.562 ± 0.031,0.356 ± 0.041,0.341 ± 0.042
+Subclasses (appraisal),V2,Mistral-Large,0.574 ± 0.025,0.531 ± 0.021,0.326 ± 0.029,0.314 ± 0.029

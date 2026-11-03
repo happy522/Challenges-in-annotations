@@ -1,0 +1,54 @@
+You are a research assistant.
+
+Annotate the text according to the Appraisal Theory. Annotate each text with one of the following categories: affect, judgement, appraisal, or ambiguous.
+
+Let’s think step-by-step.
+
+## Output Format
+Return a JSON object. For a single input text, output an object with the following fields:
+- "label": one of ("affect", "judgement", "appraisal", "ambiguous")
+- "reasoning": a brief explanation of why this label was chosen.
+
+For multiple input texts, output a JSON array where each entry is an object as specified above, corresponding to the input texts in order.
+
+Example (single text):
+{
+  "label": "judgement",
+  "reasoning": "The text expresses an evaluation of someone's behavior according to social norms."
+}
+
+Example (multiple texts):
+[
+  {"label": "affect", "reasoning": "The sentence communicates an emotional state."},
+  {"label": "ambiguous", "reasoning": "It is unclear whether this represents an appraisal, affect, or judgement."}
+]
+
+Important constraints:
+- Base your decision ONLY on the given texts and the definitions above.
+- Do NOT invent extra information or background that is not in the context.
+- If two or more categories are clearly present and one is clearly dominant, choose the dominant one (not ambiguous).
+- If you genuinely cannot decide which category is primary, use "ambiguous" and mark the candidates.
+
+Output format:
+Return ONLY a single valid JSON object (no extra text).
+
+Use exactly these fields:
+- "label": one of "affect", "judgment", "appreciation", "ambiguous"
+- "affect": 0 or 1  (1 if affect is present/relevant)
+- "judgment": 0 or 1  (1 if judgment is present/relevant)
+- "appreciation": 0 or 1  (1 if appreciation is present/relevant)
+- "probability": a float between 0.0 and 1.0 for the chosen main label in "label"
+- "top_spans": a list (max 3 items) of short quotes from the TARGET that support your decision
+- "explanation": a short explanation (max 60 words) of why you chose this label and flags,
+                 explicitly linking to the definitions above.
+
+Context:
+
+PREVIOUS:
+"""{prev_text}"""
+
+TARGET:
+"""{target_text}"""
+
+NEXT:
+"""{next_text}"""

@@ -1,0 +1,1059 @@
+﻿Text_ID,Sentence_ID,Sentence,Evaluative,Affect,Judgement,Appreciation,Ambiguous,Prev_Sentence,Next_Sentence,split,Domain,affect,judgment,appreciation,ambiguous,category,label4,ft_split,binary_raw,pred_binary,appraisal_raw,pred_category,pred_label4
+Art5.,S130,"We're all going to have big losses in our lives, maybe a job or a career, relationships, love, our youth.",1,1.0,,,0,So here's what I learned.,"We're going to lose our health, people we love.",held_out,Art,1,0,0,False,affect,affect,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expression of inevitable loss"", ""evidence_span"": ""big losses""}",1,"```json
+{
+  ""label"": ""affect"",
+  ""affect"": 1,
+  ""judgment"": 0,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.8,
+  ""probability_judgment"": 0.1,
+  ""probability_appreciation"": 0.1,
+  ""top_spans"": [""big losses"", ""lose our health"", ""lose people we love""],
+  ""explanation"": ""Expresses feelings of loss and sadness, implying negative emotions.""
+}
+```",affect,affect
+Art5.,S84,"We called this time ""the beautiful awful.""",1,,,1.0,0,It was humbling and painful and exactly where I wanted to be.,"She died on October 26, 2012. It was a year and three weeks after her diagnosis.",held_out,Art,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""contains evaluative phrase"", ""evidence_span"": ""the beautiful awful""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 1,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.6,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""the beautiful awful""],
+  ""explanation"": ""Evaluates a period as 'beautiful awful', showing appreciation and affect.""
+}
+```",appreciation,appreciation
+Art5.,S5,"To give you some background on me, I grew up the youngest of eight.",0,,,,0,"It's something we all go through, and my hope is that my experience may be helpful to somebody.","Yes, eight kids in my family.",held_out,Art,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral biographical information"", ""evidence_span"": """"}",0,,,none
+Art5.,S30,This was the place where I was isolated and in total control.,1,1.0,,,0,It had to be specific and believable.,"Since then, I've made a career of painting people in water.",held_out,Art,1,0,0,False,affect,affect,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""implies negative experience"", ""evidence_span"": ""isolated and in total control""}",1,"```json
+{
+  ""label"": ""affect"",
+  ""affect"": 1,
+  ""judgment"": 0,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.8,
+  ""probability_judgment"": 0.1,
+  ""probability_appreciation"": 0.1,
+  ""top_spans"": [""isolated"", ""in total control""],
+  ""explanation"": ""Expresses feelings of isolation, implying negative emotions.""
+}
+```",affect,affect
+Art5.,S109,This is the one with all the bugs in it.,1,,,1.0,0,"I had no plan, but I was watching what was happening.",I wasn't trying to represent a real space.,held_out,Art,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""contains evaluative phrase"", ""evidence_span"": ""all the bugs""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""all the bugs in it""],
+  ""explanation"": ""Evaluates the thing (software/program) as flawed due to bugs.""
+}
+```",appreciation,appreciation
+Art5.,S54,This is about figuring out how to help her.,1,,1.0,,0,"And when I got myself together and I looked at her, I realized, this isn't about me.","My father is a doctor, and so we had a great advantage having him in charge, and he did a beautiful job taking care of her.",held_out,Art,0,1,0,False,judgment,judgment,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral focus on problem-solving"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""figuring out how to help her""],
+  ""explanation"": ""Evaluates the process of helping, fitting Appreciation.""
+}
+```",appreciation,none
+Art6.,S6,"What does that mean, to invent dialogue?",0,,,,0,"And in that same decade, somebody -- legend has it, somebody named Thespis -- invented the idea of dialogue.","Well, we know that the Festival of Dionysus gathered the entire citizenry of Athens on the side of the Acropolis, and they would listen to music, they would watch dancing, and they would have stories told as part of the Festival of Dionysus.",held_out,Art,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral question"", ""evidence_span"": """"}",0,,,none
+Art6.,S89,"We're taking that play and we're touring it to rural counties in Pennsylvania, Ohio, Michigan, Minnesota and Wisconsin.",0,,,,0,"Years of research in Redding, Pennsylvania led her to write this play about the deindustrialization of Pennsylvania: what happened when steel left, the rage that was unleashed, the tensions that were unleashed, the racism that was unleashed by the loss of jobs.","We're partnering with community organizations there to try and make sure not only that we reach the people that we're trying to reach, but that we find ways to listen to them back and say, ""The culture is here for you, too.""",held_out,Art,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""purely factual statement"", ""evidence_span"": """"}",0,,,none
+Art6.,S7,"Well, we know that the Festival of Dionysus gathered the entire citizenry of Athens on the side of the Acropolis, and they would listen to music, they would watch dancing, and they would have stories told as part of the Festival of Dionysus.",0,,,,0,"What does that mean, to invent dialogue?",And storytelling is much like what's happening right now:,held_out,Art,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""purely descriptive"", ""evidence_span"": """"}",0,,,none
+Art6.,S85,"We in the culture have done exactly what the economy, what the educational system, what technology has done, which is turn our back on a large part of the country.",1,,1.0,,0,"And if you look at the red and blue electoral map of the United States, and if I were to tell you, ""Oh, the blue is what designates all of the major nonprofit cultural institutions,"" I'd be telling you the truth. You'd believe me.","So this idea of inclusion, it has to keep going.",held_out,Art,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""judgment of cultural behavior"", ""evidence_span"": ""turn our back on a large part of the country""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [""turn our back on a large part of the country""],
+  ""explanation"": ""Judgment is expressed through evaluation of cultural and systemic behavior.""
+}
+```",judgment,judgment
+Art6.,S2,"Theater is the essential art form of democracy, and we know this because they were born in the same city.",1,,,1.0,0,Theater matters because democracy matters.,"In the late 6th century BC, the idea of Western democracy was born.",held_out,Art,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""evaluative language used"", ""evidence_span"": ""essential art form""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""Theater is the essential art form of democracy""],
+  ""explanation"": ""Evaluates theater as essential, fitting Appreciation definition.""
+}
+```",appreciation,appreciation
+Bus11.,S74,You can buy cloned cologne.,1,,,1.0,0,"S. Guuuci, and -- All around the world this is how products are being distributed, so, for instance, in one street market on Rua 25 de Março in São Paulo, Brazil, you can buy fake designer glasses.","You can buy pirated DVDs, of course.",held_out,Bus,0,0,1,False,appreciation,appreciation,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of fact"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""cloned cologne""],
+  ""explanation"": ""Evaluates a product (cologne) as a thing, implying a fake or imitation version.""
+}
+```",appreciation,none
+Bus11.,S61,"Well, they come from here.",0,,,,0,And where do the phones come from?,"This is in Guangzhou, China, and if you go upstairs in this rather sleepy looking electronics mall, you find the Guangzhou Dashatou second-hand trade center, and if you go in there, you follow the guys with the muscles who are carrying the boxes, and where are they going?",held_out,Bus,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of origin"", ""evidence_span"": """"}",0,,,none
+Bus11.,S69,"Well, I guess.",0,,,,0,"Now, are there downsides to that?","You know, China has no — no intellectual property, right?",held_out,Bus,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral phrase"", ""evidence_span"": ""I guess""}",0,,,none
+Bus11.,S56,"We don't sell you the phone, we don't sell you the monthly plan.",0,,,,0,"And they went back to the drawing board, and they retooled, and they came up with another plan:",We only sell you airtime.,held_out,Bus,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""Neutral statement of facts"", ""evidence_span"": """"}",0,,,none
+Bus11.,S71,Versace without the vowels.,0,,,,0,"You know, China has no — no intellectual property, right?",Zhuomani instead of Armani.,held_out,Bus,0,0,0,False,,none,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""playful comparison"", ""evidence_span"": ""Versace without the vowels""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""Versace without the vowels""],
+  ""explanation"": ""Evaluates a thing (brand name modification), fitting Appreciation.""
+}
+```",appreciation,appreciation
+Bus11.,S62,"This is in Guangzhou, China, and if you go upstairs in this rather sleepy looking electronics mall, you find the Guangzhou Dashatou second-hand trade center, and if you go in there, you follow the guys with the muscles who are carrying the boxes, and where are they going?",1,,,1.0,0,"Well, they come from here.",They're going to Eddy in Lagos.,held_out,Bus,0,0,1,False,appreciation,appreciation,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral description of location"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""rather sleepy looking electronics mall"", ""Guangzhou Dashatou second-hand trade center""],
+  ""explanation"": ""Evaluates the electronics mall and trade center, suggesting a neutral to slightly negative opinion of the place.""
+}
+```",appreciation,none
+Bus14.,S65,"Well, a few things.",0,,,,0,So what's not to like?,One of the things that worries me is how easily what you might call meritocratic plutocracy can become crony plutocracy.,held_out,Bus,0,0,0,False,,none,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses a negative stance"", ""evidence_span"": ""a few things""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""a few things""],
+  ""explanation"": ""Evaluates things (aspects) negatively.""
+}
+```",appreciation,appreciation
+Bus14.,S113,We need a new New Deal.,1,,,1.0,0,"To be sure that this new economy benefits us all and not just the plutocrats, we need to embark on an era of comparably ambitious social and political change.",,held_out,Bus,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""Implicit evaluation of needed change"", ""evidence_span"": ""a new New Deal""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""a new New Deal""],
+  ""explanation"": ""Evaluates a phenomenon (new deal) as desirable or needed.""
+}
+```",appreciation,appreciation
+Bus14.,S51,We have superstar bankers.,1,,1.0,,0,We have superstar technologists.,We have superstar lawyers and superstar architects.,held_out,Bus,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""superstar implies excellence"", ""evidence_span"": ""superstar""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""superstar bankers""],
+  ""explanation"": ""Evaluates bankers as exceptional, fitting the Appreciation definition.""
+}
+```",appreciation,appreciation
+Bus14.,S109,We created public pensions.,1,,1.0,,0,We created public health care.,We created unions.,held_out,Bus,0,1,0,False,judgment,judgment,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of fact"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""public pensions""],
+  ""explanation"": ""Evaluates a thing (public pensions) as a positive phenomenon.""
+}
+```",appreciation,none
+Bus14.,S107,We created public education.,1,,1.0,,0,We created the modern welfare state.,We created public health care.,held_out,Bus,0,1,0,False,judgment,judgment,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of fact"", ""evidence_span"": """"}",0,"{""label"": ""appreciation"", ""affect"": 0, ""judgment"": 0, ""appreciation"": 1, ""probability_affect"": 0.0, ""probability_judgment"": 0.0, ""probability_appreciation"": 1.0, ""top_spans"": [""We created public education""], ""explanation"": ""Evaluates a thing (public education) as a positive achievement.""}",appreciation,none
+Bus14.,S2,"We are living in an age of surging income inequality, particularly between those at the very top and everyone else.",1,,1.0,,0,So here's the most important economic fact of our time.,"This shift is the most striking in the U.S. and in the U.K., but it's a global phenomenon.",held_out,Bus,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""income inequality implies negative judgment"", ""evidence_span"": ""surging income inequality""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""surging income inequality"", ""between those at the very top and everyone else""],
+  ""explanation"": ""Evaluates a phenomenon (income inequality), fitting Appreciation.""
+}
+```",appreciation,appreciation
+Edu2.,S51,"We immediately see in our program our girls' fear of not getting it right, of not being perfect.",1,1.0,,,0,It requires imperfection.,Every Girls Who Code teacher tells me the same story.,held_out,Edu,1,0,0,False,affect,affect,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses fear and imperfection"", ""evidence_span"": ""fear of not getting it right""}",1,"```json
+{
+  ""label"": ""affect"",
+  ""affect"": 1,
+  ""judgment"": 0,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.9,
+  ""probability_judgment"": 0.1,
+  ""probability_appreciation"": 0.0,
+  ""top_spans"": [""fear of not getting it right"", ""fear of not being perfect""],
+  ""explanation"": ""Expresses feelings of fear, aligning with Affect definition.""
+}
+```",affect,affect
+Edu2.,S64,"We have to begin to undo the socialization of perfection, but we've got to combine it with building a sisterhood that lets girls know that they are not alone.",1,,,1.0,0,"The girls will come in and say, ""Professor, there's something wrong with me.""",Because trying harder is not going to fix a broken system.,held_out,Edu,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""evaluative language used"", ""evidence_span"": ""undo the socialization of perfection""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.2,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""undo the socialization of perfection"", ""building a sisterhood""],
+  ""explanation"": ""Evaluates the concept of perfection and sisterhood, fitting Appreciation.""
+}
+```",appreciation,appreciation
+Edu2.,S24,They're rewarded for it.,1,,1.0,,0,"And by the time they're adults, whether they're negotiating a raise or even asking someone out on a date, they're habituated to take risk after risk.","It's often said in Silicon Valley, no one even takes you seriously unless you've had two failed start-ups.",held_out,Edu,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""implies positive judgment"", ""evidence_span"": ""rewarded""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""They're rewarded for it""],
+  ""explanation"": ""Rewarded implies a positive evaluation of the outcome, fitting Appreciation.""
+}
+```",appreciation,appreciation
+Edu2.,S34,They found it energizing.,1,,,1.0,0,"Bright boys, on the other hand, found the difficult material to be a challenge.",They were more likely to redouble their efforts.,held_out,Edu,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses a positive emotional response"", ""evidence_span"": ""energizing""}",1,"```json
+{
+  ""label"": ""affect"",
+  ""affect"": 1,
+  ""judgment"": 0,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.9,
+  ""probability_judgment"": 0.1,
+  ""probability_appreciation"": 0.0,
+  ""top_spans"": [""They found it energizing""],
+  ""explanation"": ""Expresses a feeling (energized) in response to a challenge.""
+}
+```",affect,affect
+Edu2.,S4,The sitting congresswoman had been in my district since 1992.,0,,,,0,"For years, I had existed safely behind the scenes in politics as a fundraiser, as an organizer, but in my heart, I always wanted to run.","She had never lost a race, and no one had really even run against her in a Democratic primary.",held_out,Edu,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of fact"", ""evidence_span"": """"}",0,,,none
+Edu2.,S7,"The polls, however, told a very different story.",1,,,1.0,0,"But in my mind, this was my way to make a difference, to disrupt the status quo.","My pollsters told me that I was crazy to run, that there was no way that I could win.",held_out,Edu,0,0,1,False,appreciation,appreciation,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of facts"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""told a very different story""],
+  ""explanation"": ""Evaluates the polls, an event, as having a different outcome.""
+}
+```",appreciation,none
+Edu6.,S41,You can't have plastic knives and swords and axes and all that kind of thing in a kindergarten classroom.,1,,1.0,,0,"A kindergarten teacher I know, her son donated all of his toys to her, and when he did, she had to go through and pull out all the little plastic guns.",What is it that we're afraid that this young man is going to do with this gun?,held_out,Edu,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""evaluates safety"", ""evidence_span"": ""can't have plastic knives and swords""}",1,"{""label"": ""appreciation"", ""affect"": 0, ""judgment"": 0, ""appreciation"": 1, ""probability_affect"": 0.0, ""probability_judgment"": 0.0, ""probability_appreciation"": 1.0, ""top_spans"": [""plastic knives and swords and axes""], ""explanation"": ""Evaluates things (plastic knives, etc.) as inappropriate for kindergarten.""}",appreciation,appreciation
+Edu6.,S73,"Women are great, yep, absolutely.",1,,1.0,,0,Now what's the problem with this?,"But male role models for boys that say it's all right to be smart -- they've got dads, they've got pastors, they've got Cub Scout leaders, but ultimately, six hours a day, five days a week they're spending in a classroom, and most of those classrooms are not places where men exist.",held_out,Edu,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses positive judgment"", ""evidence_span"": ""Women are great""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [""Women are great""],
+  ""explanation"": ""Evaluates character, expressing a positive opinion about women.""
+}
+```",judgment,judgment
+Edu6.,S89,"When you're three, you better be able to write your name legibly, or else we'll consider it a developmental delay.",1,,1.0,,0,We have a serious compression of the curriculum happening out there.,"By the time you're in first grade, you should be able to read paragraphs of text with maybe a picture, maybe not, in a book of maybe 25 to 30 pages.",held_out,Edu,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""implies judgment of developmental expectations"", ""evidence_span"": ""developmental delay""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [""be able to write your name legibly"", ""consider it a developmental delay""],
+  ""explanation"": ""Evaluates behavior (writing legibly) with a clear expectation, fitting Judgment.""
+}
+```",judgment,judgment
+Edu6.,S53,"What's wrong with writing?"" ""Now I have to write what she tells me to write."" ""OK, what is she telling you to write?"" ""Poems.",0,,,,0,"Boy comes home from school, and he says, ""I hate writing."" ""Why do you hate writing, son?",I have to write poems.,held_out,Edu,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral question"", ""evidence_span"": ""What's wrong with writing?""}",0,,,none
+Edu6.,S57,"What do you want to write about?"" ""I want to write about video games.",1,1.0,,,0,"I don't want to write that stuff."" ""Well, what do you want to write?",I want to write about leveling-up.,held_out,Edu,1,0,0,False,affect,affect,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral topic statement"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""video games"", ""I want to write about""],
+  ""explanation"": ""Evaluates a topic (video games) as worthy of writing about.""
+}
+```",appreciation,none
+Edu6.,S103,We want our babies to read when they are six months old.,1,1.0,,,0,It's coming from us.,Have you seen the ads?,held_out,Edu,1,0,0,False,affect,affect,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses a desire"", ""evidence_span"": ""We want""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""read when they are six months old""],
+  ""explanation"": ""Evaluates a desired outcome, implying a positive assessment of early reading.""
+}
+```",appreciation,appreciation
+Ent5.,S19,You select.,0,,,,0,No!,"If you go into a department store to buy a shirt, are you going to try on every single shirt and want every single shirt?",held_out,Ent,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral instruction"", ""evidence_span"": """"}",0,,,none
+Ent5.,S88,Whose are they?,0,,,,0,So those are not her pearl earrings.,"We happen to know, there's a list of Catharina, the wife's clothes.",held_out,Ent,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral question"", ""evidence_span"": """"}",0,,,none
+Ent5.,S3,"When I'm walking around an art gallery, rooms and rooms full of paintings, after about 15 or 20 minutes, I realize I'm not thinking about the paintings.",1,,,1.0,0,And I have a funny feeling that quite a few of you suffer from it as well.,I'm not connecting to them.,held_out,Ent,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""implies disconnection"", ""evidence_span"": ""I'm not thinking about the paintings""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""not thinking about the paintings""],
+  ""explanation"": ""Evaluates experience at art gallery, implying it's unengaging.""
+}
+```",appreciation,appreciation
+Ent5.,S27,"When I go into a gallery, first of all, I go quite fast, and I look at everything, and I pinpoint the ones that make me slow down for some reason or other.",1,,,1.0,0,And there's two things I do:,"I don't even know why they make me slow down, but something pulls me like a magnet and then I ignore all the others, and I just go to that painting.",held_out,Ent,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses personal experience and emotional response"", ""evidence_span"": ""make me slow down""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""I pinpoint the ones that make me slow down"", ""something pulls me like a magnet""],
+  ""explanation"": ""Evaluates artwork, expressing preference.""
+}
+```",appreciation,appreciation
+Ent5.,S44,What made me stop in my tracks about her to begin with was just the gorgeous colors he uses and the light falling on her face.,1,,,1.0,0,"It's accompanied me everywhere I've gone, I never tire of looking at her.","But I think what's kept me still coming back year after year is another thing, and that is the look on her face, the conflicted look on her face.",held_out,Ent,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""evaluative language"", ""evidence_span"": ""gorgeous colors""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.9,
+  ""top_spans"": [""gorgeous colors"", ""light falling on her face""],
+  ""explanation"": ""Evaluates the artwork's visual properties, aligning with Appreciation.""
+}
+```",appreciation,appreciation
+Ent5.,S76,"Well, he compartmentalizes his life.",1,,1.0,,0,"How does a painter paint such calm, quiet paintings with 11 kids around?","He gets to his studio, and he says, ""Nobody comes in here.",held_out,Ent,0,1,0,False,judgment,judgment,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral description"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.0,
+  ""top_spans"": [""compartmentalizes his life""],
+  ""explanation"": ""Evaluates behavior (time management) as organized.""
+}
+```",judgment,none
+Ent8.,S46,Who's heard of Twitch?,0,,,,0,Like Twitch streamers.,Twitch streamers are making three to five thousand bucks a month streaming gaming content.,held_out,Ent,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral question"", ""evidence_span"": ""Who's heard of Twitch?""}",0,,,none
+Ent8.,S84,"We had just made about 400,000 dollars in one year through iTunes sales and brand deals and stuff like that.",1,,1.0,,0,"This is when the band had hit our first machine, so things were really cranking.","And this guy comes up to me and says, ""Hey, Jack, what do you do?""",held_out,Ent,0,1,0,False,judgment,judgment,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""reports factual financial information"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.9,
+  ""top_spans"": [""400,000 dollars in one year""],
+  ""explanation"": ""Evaluates a phenomenon (financial success) as excellent.""
+}
+```",appreciation,none
+Ent8.,S68,This is Crash Course -- free educational content for the world.,1,,,1.0,0,"And he's making 4,800 bucks a month from 1,700 patrons, financing it through membership.","This show is actually on the PBS digital network -- 29,000 dollars per month.",held_out,Ent,0,0,1,False,appreciation,appreciation,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of fact"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""free educational content""],
+  ""explanation"": ""Evaluates the content as valuable ('free educational') and thus as 'appreciation'.""
+}
+```",appreciation,none
+Ent8.,S21,"This is 20,000 people.",0,,,,0,"A monthly web comic with 20,000 monthly readers -- 20,000 monthly readers -- gets paid a couple hundred bucks in ad revenue.","Like, in what world is this not enough?",held_out,Ent,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of number"", ""evidence_span"": ""20,000 people""}",0,,,none
+His5.,S97,"You have the heroes and heroines who make safe the way, and we follow the mothers and fathers.",0,,,,0,"Zechariah foresees a light coming from the east, and we are turned at this juncture to a new destination, with sibyls and prophets who will lead us on a parade.","They are the motors of this great human engine, driving it forward.",held_out,His,0,0,0,False,,none,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""presence of positive tone"", ""evidence_span"": ""make safe the way""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [""heroes and heroines who make safe the way"", ""mothers and fathers""],
+  ""explanation"": ""Evaluates behavior of heroes and parents, implying kindness and guidance.""
+}
+```",judgment,judgment
+His5.,S89,You have Noah.,0,,,,0,You have Noah and his Ark and the flood.,He's making a sacrifice and a covenant with God.,held_out,His,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""purely nominal reference"", ""evidence_span"": """"}",0,,,none
+His5.,S85,You are exactly at the point where you and I can go no further into the church.,0,,,,0,You are at critical juncture now in the ceiling.,"The gated enclosure keeps us out of the inner sanctum, and we are cast out much like Adam and Eve.",held_out,His,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of location"", ""evidence_span"": """"}",0,,,none
+His5.,S134,"Who am I, and what role do I play in this great theater of life?",1,,,1.0,0,"And as we leave this haven of uplifting beauty, we are inspired to ask ourselves life's biggest questions:",Thank you.,held_out,His,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""philosophical question implies introspection"", ""evidence_span"": ""life's biggest questions""}",1,"```json
+{
+  ""label"": ""affect"",
+  ""affect"": 1,
+  ""judgment"": 0,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.8,
+  ""probability_judgment"": 0.1,
+  ""probability_appreciation"": 0.1,
+  ""top_spans"": [""life's biggest questions"", ""haven of uplifting beauty""],
+  ""explanation"": ""Expresses introspective and contemplative feelings.""
+}
+```",affect,affect
+His5.,S111,"Those who have risen reach back to help others, and in one amazing vignette, you have a black man and a white man pulled up together in an incredible vision of human unity in this new world.",1,,,1.0,0,"They start in the lower corner, breaking away from the ground, struggling and trying to rise.",The lion's share of the space goes to the winner's circle.,held_out,His,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses human unity and amazing vision"", ""evidence_span"": ""in an incredible vision of human unity""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.2,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""incredible vision of human unity"", ""amazing vignette""],
+  ""explanation"": ""Evaluates a phenomenon (human unity) as 'incredible' and 'amazing', fitting Appreciation.""
+}
+```",appreciation,appreciation
+His5.,S100,This is the most important juncture.,1,,,1.0,0,"And now we're at the keystone of the ceiling, the culmination of the whole thing, with a figure that looks like he's about to fall out of his space into our space, encroaching our space.",Past meets present.,held_out,His,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""superlative'most important' indicates evaluation"", ""evidence_span"": ""the most important""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""the most important juncture""],
+  ""explanation"": ""Evaluates the juncture as important, fitting Appreciation.""
+}
+```",appreciation,appreciation
+His13.,S88,We can't afford to waste a brain.,1,,1.0,,0,"As we sail into an uncertain future, we need every form of human intelligence on the planet working together to tackle the challenges that we face as a society.",Thank you.,held_out,His,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""Implicit evaluation of resource value"", ""evidence_span"": ""can't afford to waste a brain""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [""can't afford to waste a brain""],
+  ""explanation"": ""Evaluates human resource, implying efficiency and value.""
+}
+```",judgment,judgment
+His13.,S84,"To be sure, autistic people have a hard time living in a world not built for them. ",1,,1.0,,0,"By autistic standards, the normal human brain is easily distractable, obsessively social, and suffers from a deficit of attention to detail.","[Seventy] years later, we're still catching up to Asperger, who believed that the ""cure"" for the most disabling aspects of autism is to be found in understanding teachers, accommodating employers, supportive communities, and parents who have faith in their children's potential.",held_out,His,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses a challenge"", ""evidence_span"": ""have a hard time""}",1,"```json
+{
+  ""label"": ""affect"",
+  ""affect"": 1,
+  ""judgment"": 0,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.8,
+  ""probability_judgment"": 0.1,
+  ""probability_appreciation"": 0.1,
+  ""top_spans"": [""have a hard time""],
+  ""explanation"": ""Expresses difficulty, implying negative emotions.""
+}
+```",affect,affect
+His13.,S26,This second story tells us everything about how we got here and where we need to go next.,1,,,1.0,0,"There was a second, more accurate story of autism which had been lost and forgotten in obscure corners of the clinical literature.",The first story starts with a child psychiatrist at Johns Hopkins Hospital named Leo Kanner.,held_out,His,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""implies a judgment on the story's importance"", ""evidence_span"": ""tells us everything""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""tells us everything"", ""where we need to go next""],
+  ""explanation"": ""Evaluates the story's significance and usefulness.""
+}
+```",appreciation,appreciation
+His13.,S49,They undertook a study of autism prevalence in the general population.,0,,,,0,Lorna and her colleague Judith Gould decided to do something that should have been done 30 years earlier.,They pounded the pavement in a London suburb called Camberwell to try to find autistic children in the community.,held_out,His,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of action"", ""evidence_span"": """"}",0,,,none
+His13.,S71,These changes weren't happening in a vacuum.,1,,1.0,,0,"In the late '80s and early 1990s, their changes went into effect, swapping out Kanner's narrow model for Asperger's broad and inclusive one.","By coincidence, as Lorna and Judith worked behind the scenes to reform the criteria, people all over the world were seeing an autistic adult for the first time.",held_out,His,0,1,0,False,judgment,judgment,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""Neutral reporting of context"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""in a vacuum""],
+  ""explanation"": ""Evaluates the context of changes, implying complexity.""
+}
+```",appreciation,none
+Med9.,S32,"When she pushed him and said, ""You know, he's really quite badly off,"" the doctor responded, ""Well, if it's that bad, he can just go back to his previous dose for a little while.""",0,,,,0,"Sadiye became concerned, and she called the prescribing doctor who very helpfully advised lots of fluids for the nausea.","""And then what?""",held_out,Med,0,0,0,False,,none,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses judgment of severity"", ""evidence_span"": ""really quite badly off""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [""he's really quite badly off"", ""the doctor responded""],
+  ""explanation"": ""Evaluates behavior and character, showing the doctor's response to the situation.""
+}
+```",judgment,judgment
+Med9.,S62,"We called surgeons and pain docs and general practitioners -- anyone we could find on the internet, and not a single one of them would help me.",1,,1.0,,0,We called everyone.,The few that we could speak with on the phone advised us to go back on the medication.,held_out,Med,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses frustration and helplessness"", ""evidence_span"": ""not a single one of them would help me""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 1,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.6,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.0,
+  ""top_spans"": [""not a single one of them would help me""],
+  ""explanation"": ""Expresses frustration and evaluates behavior as unhelpful.""
+}
+```",judgment,judgment
+Med9.,S103,"This is a four-page document, and most of it's pictures.",0,,,,0,"Well, after I initially published my story in an academic journal, someone from the CDC sent me their pocket guide for tapering opioids.","In it, they teach physicians how to taper opioids in the easier cases, and one of the their recommendations is that you never start at more than a 10 percent dose reduction per week.",held_out,Med,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral description"", ""evidence_span"": """"}",0,,,none
+Med9.,S95,"These sorts of considerations help to explain why America, despite accounting for only five percent of the global population, consumes nearly 70 percent of the total global opioid supply.",1,,1.0,,0,"And even when opioids are called for, they often prescribe much more than is needed.",But focusing only on the rate of prescribing risks overlooking two crucially important points.,held_out,Med,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""implies criticism of opioid consumption"", ""evidence_span"": ""consumes nearly 70 percent""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.9,
+  ""top_spans"": [""consumes nearly 70 percent of the total global opioid supply""],
+  ""explanation"": ""Evaluates the opioid supply phenomenon, implying an excessive consumption.""
+}
+```",appreciation,appreciation
+Med9.,S86,"The prescribers saw me as a complex patient needing specialized care, probably from pain medicine.",1,,1.0,,0,"Dependence is simply the brain's natural response to an opioid-rich environment and so there was every reason to think that from the beginning, I would need a supervised, well-formed tapering plan, but our health care system seemingly hasn't decided who's responsible for patients like me.","The pain docs saw their job as getting pain under control and when I couldn't get off the medication, they saw me as the purview of addiction medicine.",held_out,Med,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""specialized care implies quality evaluation"", ""evidence_span"": ""needing specialized care""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [""complex patient needing specialized care"", ""saw me as a complex patient""],
+  ""explanation"": ""Judgment is present as it evaluates the patient's needs and prescribers' actions.""
+}
+```",judgment,judgment
+Med15.,S99,"We're part of this system, too.",0,,,,0,"When we're frustrated that entities won't share data -- data that comes from people who gave their energy, their time, their blood and even their tears -- we need to stop and ask, ""How is it true that we could share, but we aren't?""",How do we make it so that people can share ideas freely?,held_out,Med,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral statement of fact"", ""evidence_span"": """"}",0,,,none
+Med15.,S128,We'll not only find ourselves there but we'll also be able to step into the shoes of those we fear and those who fear us.,1,,1.0,,0,"And so I invite you, us, we, to turn toward our fear; to embrace the things that scare us and find the love at the center.","If we breathe into that fear and are vulnerable with the systems and people who challenge us, our power as changemakers grows exponentially.",held_out,Med,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""emotive language"", ""evidence_span"": ""step into the shoes of those we fear""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [""step into the shoes of those we fear"", ""those who fear us""],
+  ""explanation"": ""Judgment is chosen as it evaluates behavior and character, showing empathy and understanding towards others.""
+}
+```",judgment,judgment
+Med15.,S51,We realized that we would have to do work on this condition ourselves to find solutions for ourselves and others like us.,0,,,,0,Researchers competed with each other because the ecosystem was designed to reward competition rather than to alleviate suffering.,But we faced two major barriers.,held_out,Med,0,0,0,False,,none,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses need and self-reliance"", ""evidence_span"": ""have to do work""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""to find solutions for ourselves and others like us""],
+  ""explanation"": ""Evaluates the situation, implying a need for improvement.""
+}
+```",appreciation,appreciation
+Med15.,S71,We put together a research consortium.,0,,,,0,We created a diagnostic test.,We held research meetings and opened a center of excellence.,held_out,Med,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of action"", ""evidence_span"": """"}",0,,,none
+Med15.,S69,We patented it so that it would be freely available.,1,,,1.0,0,"Within a few years, we found the gene.",We created a diagnostic test.,held_out,Med,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""implies positive value"", ""evidence_span"": ""freely available""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""freely available""],
+  ""explanation"": ""Evaluates the decision to patent as beneficial.""
+}
+```",appreciation,appreciation
+Med15.,S73,"We found more than 4,000 people around the world who had PXE, and held patient meetings and did clinical trials and studies.",0,,,,0,We held research meetings and opened a center of excellence.,"Through all this, we lived with fear.",held_out,Med,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""purely factual report"", ""evidence_span"": """"}",0,,,none
+Phi3.,S114,You can't progress as a society when you have this kind of asymmetry.,1,,1.0,,0,"Most people are walking around saying, ""You know, my ideology is based on basic benevolence, I want to help people, but the other guys, they're evil and out to get me.""",It's impossible.,held_out,Phi,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""evaluates societal progress"", ""evidence_span"": ""can't progress as a society""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.2,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""as a society"", ""this kind of asymmetry""],
+  ""explanation"": ""Evaluates societal progress, an abstract phenomenon.""
+}
+```",appreciation,appreciation
+Phi3.,S146,Yes.,0,,,,0,Yes.,But you know what we really need?,held_out,Phi,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""Neutral affirmation"", ""evidence_span"": """"}",0,,,none
+Phi3.,S87,Wrong.,1,,1.0,,0,It sounds like Milton Friedman or Ronald Reagan.,President Barack Obama said that.,held_out,Phi,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses judgment"", ""evidence_span"": ""Wrong""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.0,
+  ""top_spans"": [""Wrong""],
+  ""explanation"": ""Expresses evaluation of opinion, aligning with Judgment.""
+}
+```",judgment,judgment
+Phi3.,S85,Who said it?,0,,,,0,"They have lifted billions out of poverty.""",It sounds like Milton Friedman or Ronald Reagan.,held_out,Phi,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral question"", ""evidence_span"": """"}",0,,,none
+Phi3.,S171,Where does this start?,0,,,,0,How are you going to express that?,It starts here.,held_out,Phi,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral question"", ""evidence_span"": """"}",0,,,none
+Phi3.,S177,"When people hear us, with the kind of unpredictable ideology, then maybe people will listen.",1,,,1.0,0,We're blessed with leadership.,Maybe progress will start at that point.,held_out,Phi,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses hope for change"", ""evidence_span"": ""maybe people will listen""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [""kind of unpredictable ideology"", ""people will listen""],
+  ""explanation"": ""Evaluates behavior (leadership ideology) and its potential impact.""
+}
+```",judgment,judgment
+Phi8.,S96,"When we choose between options that are on a par, we can do something really rather remarkable.",1,,1.0,,0,"It's here, in the space of hard choices, that we get to exercise our normative power -- the power to create reasons for yourself, to make yourself into the kind of person for whom country living is preferable to the urban life.",We can put our very selves behind an option.,held_out,Phi,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""contains evaluative language"", ""evidence_span"": ""really rather remarkable""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""we can do something really rather remarkable""],
+  ""explanation"": ""Evaluates the outcome of choosing between options as'remarkable', showing appreciation.""
+}
+```",appreciation,appreciation
+Phi8.,S21,"When I graduated from college, I couldn't decide between two careers, philosophy and law.",0,,,,0,We also shouldn't think that hard choices are hard because we are stupid.,I really loved philosophy.,held_out,Phi,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of past action"", ""evidence_span"": """"}",0,,,none
+Phi8.,S94,"When alternatives are on a par, the reasons given to us, the ones that determine whether we're making a mistake, are silent as to what to do.",0,,,,0,"Instead, you faced alternatives that were on a par -- hard choices -- and you made reasons for yourself to choose that hobby, that house and that job.","It's here, in the space of hard choices, that we get to exercise our normative power -- the power to create reasons for yourself, to make yourself into the kind of person for whom country living is preferable to the urban life.",held_out,Phi,0,0,0,False,,none,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""evaluative language:'mistake'"", ""evidence_span"": ""making a mistake""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""alternatives that were on a par"", ""silent as to what to do""],
+  ""explanation"": ""Evaluates the situation of having equal alternatives, implying a neutral or uncertain appreciation of the options.""
+}
+```",appreciation,appreciation
+Phi8.,S110,What we do in hard choices is very much up to each of us.,1,,1.0,,0,"You might decide to be a pink sock-wearing, cereal-loving, country-living banker, and I might decide to be a black sock-wearing, urban, donut-loving artist.","Now, people who don't exercise their normative powers in hard choices are drifters.",held_out,Phi,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""evaluative language 'hard choices'"", ""evidence_span"": ""hard choices""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [""What we do in hard choices"", ""up to each of us""],
+  ""explanation"": ""Judgment is expressed through evaluation of personal responsibility in decision-making.""
+}
+```",judgment,judgment
+Phi8.,S25,"Well, that struck me as the height of extravagance and frivolity.",1,1.0,,,0,"But I came from a modest immigrant family where my idea of luxury was having a pork tongue and jelly sandwich in my school lunchbox, so the thought of spending my whole life sitting around in armchairs just thinking...","So I got out my yellow pad, I drew a line down the middle, and I tried my best to think of the reasons for and against each alternative.",held_out,Phi,1,0,0,False,affect,affect,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses judgment of behavior"", ""evidence_span"": ""height of extravagance and frivolity""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.2,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""height of extravagance and frivolity""],
+  ""explanation"": ""Evaluates a lifestyle as extravagant, fitting the Appreciation definition.""
+}
+```",appreciation,appreciation
+Phi8.,S78,"We shouldn't assume that the world of is, of lengths and weights, has the same structure as the world of ought, of what we should do.",1,,1.0,,0,The stuff of the other world can't.,"So if what matters to us -- a child's delight, the love you have for your partner — can't be represented by real numbers, then there's no reason to believe that in choice, there are only three possibilities -- that one alternative is better, worse or equal to the other.",held_out,Phi,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""judgment of behavior"", ""evidence_span"": ""We shouldn't assume""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""the world of is, of lengths and weights"", ""the world of ought, of what we should do""],
+  ""explanation"": ""Evaluates phenomena (world structures) as having different characteristics.""
+}
+```",appreciation,appreciation
+Pol2.,S91,"When cities interact, they interact like this.",0,,,,0,"When states face each other, China and the U.S., they face each other like this.","China and the U.S., despite the recent meta-meeting in California, are locked in all kinds of anger, resentment, and rivalry for number one.",held_out,Pol,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral description"", ""evidence_span"": """"}",0,,,none
+Pol2.,S93,We heard more about who will be number one.,0,,,,0,"China and the U.S., despite the recent meta-meeting in California, are locked in all kinds of anger, resentment, and rivalry for number one.",Cities don't worry about number one.,held_out,Pol,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of topic"", ""evidence_span"": """"}",0,,,none
+Pol2.,S10,"We are talking about the venues in which those public spaces where we come together to create democracy, and at the same time protest those who would take our freedom, take place.",0,,,,0,We are talking about the cradle of democracy.,"Think of some great names: the Place de la Bastille, Zuccotti Park, Tahrir Square, Taksim Square in today's headlines in Istanbul, or, yes, Tiananmen Square in Beijing.",held_out,Pol,0,0,0,False,,none,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""evaluation of democracy and freedom"", ""evidence_span"": ""create democracy, and at the same time protest those who would take our freedom""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.2,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""public spaces where we come together to create democracy"", ""venues in which those public spaces""],
+  ""explanation"": ""Evaluates venues and public spaces, aligning with Appreciation of things and phenomena.""
+}
+```",appreciation,appreciation
+Pol2.,S30,"We are an urban species, at home in our cities.",1,,1.0,,0,I say we are an urban animal.,"So to come back to the dilemma, if the dilemma is we have old-fashioned political nation-states unable to govern the world, respond to the global challenges that we face like climate change, then maybe it's time for mayors to rule the world, for mayors and the citizens and the peoples they represent to engage in global governance.",held_out,Pol,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""positive evaluation of urban environment"", ""evidence_span"": ""at home in our cities""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""at home in our cities""],
+  ""explanation"": ""Evaluates the urban environment as comfortable, linking to Appreciation.""
+}
+```",appreciation,appreciation
+Pol2.,S52,"Washington, Beijing, Paris, as world capitals, are anything but pragmatic, but real city mayors have to be pragmatists.",1,,1.0,,0,"And that's what we have to do, and to do that is about pragmatism in that deep, American sense, reaching outcomes.","They have to get things done, they have to put ideology and religion and ethnicity aside and draw their cities together.",held_out,Pol,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""contrasting cities"", ""evidence_span"": ""are anything but pragmatic""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [""are anything but pragmatic"", ""have to be pragmatists""],
+  ""explanation"": ""Evaluates behavior of city mayors as pragmatists, fitting Judgment definition.""
+}
+```",judgment,judgment
+Pol9.,S42,"What can we do?""",0,,,,0,Eighty percent of the two thousand people here are without a lawyer.,So lawyers began to courageously stand up together to organize a system where they can take cases.,held_out,Pol,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""Neutral question"", ""evidence_span"": """"}",0,,,none
+Pol9.,S4,"We often think of torture as being political torture or reserved for just the worst, but, in fact, 95 percent of torture today is not for political prisoners.",1,,1.0,,0,And what I recognized was that there was an incredible window of opportunity for us as a world community to come together and end torture as an investigative tool.,"It is for people who are in broken-down legal systems, and unfortunately because torture is the cheapest form of investigation -- it's cheaper than having a legal system, cheaper than having a lawyer and early access to counsel -- it is what happens most of the time.",held_out,Pol,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""Provides a negative evaluation of torture"", ""evidence_span"": ""95 percent of torture today is not for political prisoners""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.2,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""95 percent of torture today is not for political prisoners"", ""torture is the cheapest form of investigation""],
+  ""explanation"": ""Evaluates the prevalence and cost of torture, fitting the Appreciation category.""
+}
+```",appreciation,appreciation
+Pol9.,S53,"They were torturing everybody all the time.""",1,,1.0,,0,The police are one of the main reasons why we had the revolution.,"And I said, ""But there's been tens of millions of dollars that have recently gone in to the development of the legal system here.",held_out,Pol,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses strong negative judgment"", ""evidence_span"": ""torturing everybody""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 1,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.6,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.0,
+  ""top_spans"": [""torturing everybody""],
+  ""explanation"": ""Expresses negative judgment and affect towards the police's behavior.""
+}
+```",judgment,judgment
+Pol9.,S50,"The key that we see, though, is training and then early access.",1,,,1.0,0,"And with that, he successfully organized 68 lawyers who have been systematically taking the cases.","I was recently in Egypt, and was inspired to meet with another group of lawyers, and what they told me is that they said, ""Hey, look, we don't have police on the streets now.",held_out,Pol,0,0,1,False,appreciation,appreciation,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of concepts"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""training and then early access""],
+  ""explanation"": ""Evaluates 'training and early access' as key, implying they are valuable or effective (Appreciation).""
+}
+```",appreciation,none
+Pol9.,S17,"The first group of defenders came together and I still remember, as I was training, I said, ""Okay, what do you do for an investigation?""",0,,,,0,So it's just a place where there was no rule of law.,"And there was silence in the class, and finally one woman stood up, [inaudible name], and she said ""Khrew,"" which means ""teacher.""",held_out,Pol,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of actions"", ""evidence_span"": """"}",0,,,none
+Pol9.,S65,"So the pieces are, not only the training of the lawyers, but us finding a way to systematically implement early access to counsel, because they are the safeguard in the system for people who are being tortured.",1,,,1.0,0,"And after a pause, they said, ""They had been tortured.""","And as I tell you this, I'm also aware of the fact that it sounds like, ""Oh, okay, it sounds like we could do it, but can we really do it?""",held_out,Pol,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""evaluation of system safeguard"", ""evidence_span"": ""safeguard in the system for people who are being tortured""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.2,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""systematically implement early access to counsel"", ""safeguard in the system""],
+  ""explanation"": ""Evaluates the implementation of early access to counsel as a positive phenomenon.""
+}
+```",appreciation,appreciation
+Psy5.,S5,"When I was a kid, we took a family vacation.",0,,,,0,"My father was one of those legions of fathers who, I swear, would rather drive through an alligator-infested swamp than actually ask someone for help getting back to the road.",We drove from our home in South Jersey to Colonial Williamsburg.,held_out,Psy,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of fact"", ""evidence_span"": """"}",0,,,none
+Psy5.,S31,We really can't blame other people for not just spontaneously offering to help us when we don't actually know that that's what is wanted.,1,,1.0,,0,"So, if looks could kill, I would not be standing here right now.","In fact, actually, research shows that 90 percent of the help that coworkers give one another in the workplace is in response to explicit requests for help.",held_out,Psy,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""judgment of people's behavior"", ""evidence_span"": ""can't blame other people""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.0,
+  ""top_spans"": [""can't blame other people"", ""don't actually know that that's what is wanted""],
+  ""explanation"": ""Evaluates behavior, implying it's unreasonable to expect help without asking.""
+}
+```",judgment,judgment
+Psy5.,S96,We are all a little bit afraid to do it.,1,1.0,,,0,"I know -- believe me, I know -- that it is not easy to ask for help.",It makes us feel vulnerable.,held_out,Psy,1,0,0,False,affect,affect,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses fear"", ""evidence_span"": ""a little bit afraid""}",1,"```json
+{
+  ""label"": ""affect"",
+  ""affect"": 1,
+  ""judgment"": 0,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.9,
+  ""probability_judgment"": 0.1,
+  ""probability_appreciation"": 0.0,
+  ""top_spans"": [""afraid to do it""],
+  ""explanation"": ""Expresses fear, an emotion, aligning with Affect definition.""
+}
+```",affect,affect
+Psy5.,S14,"We all, to some extent, suffer from something that psychologists call ""the illusion of transparency"" -- basically, the mistaken belief that our thoughts and our feelings and our needs are really obvious to other people.",1,1.0,,,0,OK?,"This is not true, but we believe it.",held_out,Psy,1,0,0,False,affect,affect,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""evaluation of human belief"", ""evidence_span"": ""the illusion of transparency""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""the illusion of transparency"", ""mistaken belief""],
+  ""explanation"": ""Evaluates a psychological phenomenon, fitting the Appreciation category.""
+}
+```",appreciation,appreciation
+Psy5.,S17,"This is a really, really bad assumption.",1,,,1.0,0,"And so, we just mostly stand around waiting for someone to notice our needs and then spontaneously offer to help us with it.","In fact, not only is it very difficult to tell what your needs are, but even the people close to you often struggle to understand how they can support you.",held_out,Psy,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""contains negative evaluation"", ""evidence_span"": ""really, really bad assumption""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.9,
+  ""top_spans"": [""really, really bad assumption""],
+  ""explanation"": ""Evaluates the assumption as 'bad', fitting Appreciation.""
+}
+```",appreciation,appreciation
+Psy5.,S88,They get pictures.,0,,,,0,Donors actually get letters from the kids in the classroom.,They get to know that they made a difference.,held_out,Psy,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""purely factual"", ""evidence_span"": """"}",0,,,none
+Psy8.,S17,"Which leaves the question, what are the big causes of happiness?",1,,,1.0,0,"Yes, it's better to make more money rather than less, or to graduate from college instead of dropping out, but the differences in happiness tend to be small.","I think that's a question we haven't really answered yet, but I think something that has the potential to be an answer is that maybe happiness has an awful lot to do with the contents of our moment-to-moment experiences.",held_out,Psy,0,0,1,False,appreciation,appreciation,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral question"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""what are the big causes of happiness""],
+  ""explanation"": ""Evaluates the phenomenon of happiness, seeking its key causes.""
+}
+```",appreciation,none
+Psy8.,S78,"We're lucky in this data we have many responses from each person, and so we can look and see, does mind-wandering tend to precede unhappiness, or does unhappiness tend to precede mind-wandering, to get some insight into the causal direction.",1,,1.0,,0,The cause has to come before the effect.,"As it turns out, there is a strong relationship between mind-wandering now and being unhappy a short time later, consistent with the idea that mind-wandering is causing people to be unhappy.",held_out,Psy,0,1,0,False,judgment,judgment,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of research approach"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""many responses from each person"", ""get some insight into the causal direction""],
+  ""explanation"": ""Evaluates the data and research process, expressing a positive appreciation for the availability of responses.""
+}
+```",appreciation,none
+Psy8.,S12,"Well, as with many other domains in life, I think the scientific method has the potential to answer this question.",1,,,1.0,0,"People have been debating the causes of happiness for a really long time, in fact for thousands of years, but it seems like many of those debates remain unresolved.","In fact, in the last few years, there's been an explosion in research on happiness.",held_out,Psy,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses potential and optimism"", ""evidence_span"": ""has the potential to answer this question""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""the scientific method has the potential to answer this question""],
+  ""explanation"": ""Evaluates the scientific method's potential, fitting Appreciation.""
+}
+```",appreciation,appreciation
+Psy8.,S7,We live longer.,0,,,,0,We're richer.,We have access to technology that would have seemed like science fiction just a few years ago.,held_out,Psy,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of fact"", ""evidence_span"": """"}",0,,,none
+Psy8.,S88,"This shows the rate of mind-wandering across 22 activities ranging from a high of 65 percent when people are taking a shower, brushing their teeth, to 50 percent when they're working, to 40 percent when they're exercising, all the way down to this one short bar on the right that I think some of you are probably laughing at.",1,,1.0,,0,How does that depend on what people are doing?,Ten percent of the time people's minds are wandering when they're having sex.,held_out,Psy,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""evaluative language and tone"", ""evidence_span"": ""I think some of you are probably laughing at""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [
+    ""ranging from a high of 65 percent"",
+    ""all the way down to this one short bar on the right""
+  ],
+  ""explanation"": ""Evaluates the rate of mind-wandering across activities.""
+}
+```",appreciation,appreciation
+Psy8.,S30,"This guy is sitting here working on his computer, and yet he could be thinking about the vacation he had last month, wondering what he's going to have for dinner.",0,,,,0,"As human beings, we have this unique ability to have our minds stray away from the present.",Maybe he's worried that he's going bald.,held_out,Psy,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral description of actions"", ""evidence_span"": """"}",0,,,none
+Sci7.,S17,Who is out there?,0,,,,0,Is there life out there?,"You know, this question has been around for thousands of years, since at least the time of the Greek philosophers.",held_out,Sci,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""purely factual question"", ""evidence_span"": """"}",0,,,none
+Sci7.,S97,"Well, you know, our own Earth has oxygen in the atmosphere to 20 percent by volume.",0,,,,0,"So when it comes to other planets, other Earths, in the future when we can observe them, what kind of gases would we be looking for?",That's a lot of oxygen.,held_out,Sci,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""purely factual statement"", ""evidence_span"": """"}",0,,,none
+Sci7.,S28,"Well, if we were able to look at our galaxy from the outside and zoom in to where our sun is, we see a real map of the stars.",1,,,1.0,0,"Well, the biologists get furious with me for saying that, because we have absolutely no evidence for life beyond Earth yet.",And the highlighted stars are those with known exoplanets.,held_out,Sci,0,0,1,False,appreciation,appreciation,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral description"", ""evidence_span"": """"}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""a real map of the stars""],
+  ""explanation"": ""Evaluates a phenomenon (galaxy map) as real, fitting Appreciation.""
+}
+```",appreciation,none
+Sci7.,S108,"Well, I had my own crazy theory.",1,,,1.0,0,"So, please don't email me one of your crazy theories.","But, who does the MIT professor go to?",held_out,Sci,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""contains evaluative word 'crazy'"", ""evidence_span"": ""crazy theory""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.0,
+  ""top_spans"": [""my own crazy theory""],
+  ""explanation"": ""Judgment is expressed through 'crazy theory', evaluating behaviour.""
+}
+```",judgment,judgment
+Sci7.,S62,We think the surface is hot enough to melt rock and has liquid lava lakes.,0,,,,0,"And actually, it's so hot, we can't visit any of these planets, but if we could, we would melt long before we got there.",Gliese 1214b.,held_out,Sci,0,0,0,False,,none,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""describes surface as hot enough to melt rock"", ""evidence_span"": ""hot enough to melt rock""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.9,
+  ""top_spans"": [""hot enough to melt rock"", ""liquid lava lakes""],
+  ""explanation"": ""Evaluates a phenomenon (surface temperature) as extreme.""
+}
+```",appreciation,appreciation
+Sci10.,S56,"Your mood today doesn't necessarily tell me anything about your personality, nor does a cold day tell me anything about climate change, or a hot day, for that matter.",1,,,1.0,0,"Weather is your mood, climate is your personality.",Dunning-Kruger.,held_out,Sci,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""contrasting ideas"", ""evidence_span"": ""doesn't necessarily tell me anything""}",1,"```json
+{
+  ""label"": ""judgment"",
+  ""affect"": 0,
+  ""judgment"": 1,
+  ""appreciation"": 0,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.8,
+  ""probability_appreciation"": 0.2,
+  ""top_spans"": [
+    ""Your mood today doesn't necessarily tell me anything about your personality""
+  ],
+  ""explanation"": ""Evaluates behavior/character, implying mood doesn't define personality.""
+}
+```",judgment,judgment
+Sci10.,S18,"You never hear anyone say, ""Do you believe, if you go to the top of that building and throw a ball off, it's going to fall?""",0,,,,0,"Bank of America building, there, in Atlanta.","You never hear that, because gravity is a thing.",held_out,Sci,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of a hypothetical scenario"", ""evidence_span"": """"}",0,,,none
+Sci10.,S113,Whatever you want to call it.,0,,,,0,Snowzilla?,All two inches of it.,held_out,Sci,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral phrase"", ""evidence_span"": """"}",0,,,none
+Sci10.,S131,"What do you read, what do you listen to, to consume your information on science?",0,,,,0,"Then, evaluate your sources -- where do you get your information on science?","And then, it's important to speak out.",held_out,Sci,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""Neutral question"", ""evidence_span"": """"}",0,,,none
+Sci10.,S109,"Well we don't even have to go to Houston, we can come very close to home.",0,,,,0,How do we step out of the boxes that are cornering our perceptions?,"Remember ""Snowpocalypse?""",held_out,Sci,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of possibility"", ""evidence_span"": """"}",0,,,none
+Sci10.,S64,"We just recently had Groundhog Day, right?",0,,,,0,Cognitive dissonance is interesting.,"Now, there's no better definition of cognitive dissonance than intelligent people asking me if a rodent's forecast is accurate.",held_out,Sci,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral question"", ""evidence_span"": """"}",0,,,none
+Tech10.,S85,"We really need regulation, we need subsidies, taxes on carbon.",1,1.0,,,0,"We could have all of the clever thinking and technology in the world, but it's not going to be enough in order for this technology to have a significant impact on climate.","There are a few of us that would absolutely be willing to pay more, but what will be required is for carbon-neutral, carbon-negative paths to be affordable for the majority of society in order to impact climate.",held_out,Tech,1,0,0,False,affect,affect,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""expresses need for regulation"", ""evidence_span"": ""We really need regulation""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""regulation"", ""subsidies"", ""taxes on carbon""],
+  ""explanation"": ""Evaluates solutions (regulation, subsidies) for climate impact.""
+}
+```",appreciation,appreciation
+Tech10.,S70,This is the equivalent of roughly 25 percent of our annual emissions in the US.,0,,,,0,The Amazon is capable of capturing 1.6 billion tons of CO2 each year.,The land area required for a synthetic forest or a manufactured direct air capture plant to capture the same is 500 times smaller.,held_out,Tech,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral reporting of fact"", ""evidence_span"": """"}",0,,,none
+Tech10.,S62,They use solid materials for capture.,0,,,,0,Switzerland-based Climeworks and US-based Global Thermostat use a different approach.,"Climeworks uses heat from the earth, or geothermal, or even excess steam from other industrial processes to cut down on pollution and costs.",held_out,Tech,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""purely factual description"", ""evidence_span"": """"}",0,,,none
+Tech10.,S59,They have a clever approach that allows them to co-capture the CO2 from the air and the CO2 that they generate from burning the natural gas.,1,,,1.0,0,"They use a liquid-based approach for separation combined with burning super-abundant, cheap natural gas to supply the heat required.","And so by doing this, they offset excess pollution and they reduce costs.",held_out,Tech,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""presence of 'clever approach'"", ""evidence_span"": ""a clever approach""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""clever approach"", ""co-capture the CO2""],
+  ""explanation"": ""Evaluates their approach as clever, showing appreciation.""
+}
+```",appreciation,appreciation
+Tech10.,S53,"There's a company today, a commercial-scale company, that can do this as low as 600 dollars a ton.",1,,1.0,,0,"That's, in part, the work that I do.",There are several other companies that are developing technologies that can do this even cheaper than that.,held_out,Tech,0,1,0,False,judgment,judgment,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""reports a factual price"", ""evidence_span"": ""600 dollars a ton""}",0,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.9,
+  ""top_spans"": [""as low as 600 dollars a ton"", ""commercial-scale company""],
+  ""explanation"": ""Evaluates a company's performance and cost, fitting the Appreciation definition.""
+}
+```",appreciation,none
+Tech10.,S54,There are several other companies that are developing technologies that can do this even cheaper than that.,1,,1.0,,0,"There's a company today, a commercial-scale company, that can do this as low as 600 dollars a ton.",I'm going to talk to you a little bit about a few of these different companies.,held_out,Tech,0,1,0,False,judgment,judgment,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""Comparison with 'even cheaper'"", ""evidence_span"": ""even cheaper than that""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.8,
+  ""top_spans"": [""even cheaper than that""],
+  ""explanation"": ""Evaluates technologies as cheaper, fitting Appreciation definition.""
+}
+```",appreciation,appreciation
+Tech21.,S33,"You know, was there something actually out there?",0,,,,0,Who would I meet?,"And the answer, by all accounts, was no. This was the Internet, this black box with a red light on it, as represented in the sitcom ""The IT Crowd.""",held_out,Tech,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral questioning"", ""evidence_span"": """"}",0,,,none
+Tech21.,S55,You can you hold them in your hand.,0,,,,0,"And in this dimension, they are incredibly small.",They're like a garden hose.,held_out,Tech,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral description"", ""evidence_span"": """"}",0,,,none
+Tech21.,S5,You can get a feel for them.,0,,,,0,You can smell them.,You can experience their sense of place.,held_out,Tech,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral language"", ""evidence_span"": """"}",0,,,none
+Tech21.,S29,Where would it go?,0,,,,0,And then I got this image in my head of what would happen if you yanked the wire from the wall and if you started to follow it.,Was the Internet actually a place that you could visit?,held_out,Tech,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral question"", ""evidence_span"": """"}",0,,,none
+Tech21.,S30,Was the Internet actually a place that you could visit?,0,,,,0,Where would it go?,Could I go there?,held_out,Tech,0,0,0,False,,none,test,"{""binary"": 0, ""label"": ""no_eval"", ""justification"": ""neutral question"", ""evidence_span"": """"}",0,,,none
+Tech21.,S59,"They're three or five or eight thousand miles in length, and if the material science and the computational technology is incredibly complicated, the basic physical process is shockingly simple.",1,,,1.0,0,They stretch across the ocean.,"Light goes in on one end of the ocean and comes out on the other, and it usually comes from a building called a landing station that's often tucked away inconspicuously in a little seaside neighborhood, and there are amplifiers that sit on the ocean floor that look kind of like bluefin tuna, and every 50 miles they amplify the signal, and since the rate of transmission is incredibly fast, the basic unit is a 10-gigabit-per-second wavelength of light, maybe a thousand times your own connection, or capable of carrying 10,000 video streams, but not only that, but you'll put not just one wavelength of light through one of the fibers, but you'll put maybe 50 or 60 or 70 different wavelengths or colors of light through a single fiber, and then you'll have maybe eight fibers in a cable, four going in each direction.",held_out,Tech,0,0,1,False,appreciation,appreciation,test,"{""binary"": 1, ""label"": ""eval"", ""justification"": ""contains evaluative language"", ""evidence_span"": ""incredibly complicated"", ""shockingly simple""}",1,"```json
+{
+  ""label"": ""appreciation"",
+  ""affect"": 0,
+  ""judgment"": 0,
+  ""appreciation"": 1,
+  ""probability_affect"": 0.0,
+  ""probability_judgment"": 0.0,
+  ""probability_appreciation"": 0.9,
+  ""top_spans"": [
+    ""incredibly complicated"",
+    ""shockingly simple"",
+    ""incredibly fast""
+  ],
+  ""explanation"": ""Evaluates the complexity and speed of the technology, fitting the Appreciation category.""
+}
+```",appreciation,appreciation

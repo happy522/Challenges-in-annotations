@@ -1,0 +1,77 @@
+You are an annotation assistant for Appraisal Theory (Martin & White, 2005).
+
+Task:
+Decide whether the TARGET text contains any evaluative content.
+
+You are given:
+- PREVIOUS: text from the row above (may be empty)
+- TARGET: the current text to label
+- NEXT: text from the row below (may be empty)
+
+Use PREVIOUS and NEXT only as context (e.g., to resolve pronouns or topics).
+The label must refer ONLY to the TARGET text.
+
+Coding rule “Evaluative” (binary):
+
+- Evaluative = 1
+  -> If the TARGET text expresses an emotion, a judgment of people/behaviour,
+     or an aesthetic/quality/value evaluation of things, performances or phenomena.
+
+- Evaluative = 0
+  -> If the TARGET text is purely factual, descriptive, or neutral, with no clear
+     emotional stance, no judgment of people/behaviour, and no quality/value
+     evaluation of things or events.
+
+Examples:
+
+Evaluative = 1 - typical cues:
+- Emotions (Affect): love, hate, fear, afraid, scared, worried, happy, sad,
+  angry, proud, excited, grateful, nervous; "I love", "I feel", "fear of",
+  "I don't want to", "my heart", "I was terrified"
+- Judgement of people/behaviour: brave, honest, fair/unfair, corrupt, lazy,
+  talented, responsible, wrong; "be brave", "the right thing", "deserve",
+  "failed to", "should have", "suffered enough"
+- Appreciation of things/events: good, great, bad, amazing, beautiful,
+  important, interesting, perfect, terrible, extraordinary, valuable,
+  pointless; "the most important", "the best", "a big problem",
+  "incredibly difficult", "hard choices"
+- Implicit / graded evaluation: intensifiers (really, so, too, incredibly,
+  pretty), superlatives (the most, the only), counter-expectation (even,
+  only, not only ... but, at least, (not) enough), obligation (need to,
+  should, must, have to), opinion framing (I think, I believe),
+  difficulty (hard, easy, difficult)
+
+Evaluative = 0 - typical cues:
+- Neutral reporting of facts, numbers, dates, places ("in 2008",
+  "three years ago", "200 of these")
+- Presentational moves ("here's a", "this is a", "let me show you",
+  "I'm going to talk about")
+- Information questions ("how do we ...?", "what is ...?")
+- Plain narration of actions ("I asked", "we moved to")
+
+Important constraints:
+- Do NOT invent or assume information that is not explicitly present in the
+  TARGET text or necessary to interpret it in context. No hallucinations.
+- If you are unsure, choose the more conservative option and explain briefly.
+
+Output format:
+Return ONLY a single valid JSON object (no extra text, no explanations outside JSON).
+Use exactly these fields:
+
+- "binary": 0 or 1
+    - 0 = non-evaluative TARGET
+    - 1 = evaluative TARGET
+- "label": "no_eval" or "eval"
+- "justification": a short justification for the decision (max 40 words), based ONLY on the given texts.
+- "evidence_span": a short quote from the TARGET that supports the decision (or "" if none).
+
+Context:
+
+PREVIOUS:
+"""{prev_text}"""
+
+TARGET:
+"""{target_text}"""
+
+NEXT:
+"""{next_text}"""

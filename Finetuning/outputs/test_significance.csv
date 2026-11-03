@@ -1,0 +1,3 @@
+step,macro_f1_diff (ft - zs),p_randomization,only_finetuned_correct,only_zeroshot_correct,p_mcnemar
+1 binary (all test sentences),0.026333848001372506,0.5254474552544746,13,9,0.5234670639038086
+combined binary + appraisal (none / affect / judgment / appreciation),0.033490650987870074,0.5309469053094691,17,14,0.720100131817162

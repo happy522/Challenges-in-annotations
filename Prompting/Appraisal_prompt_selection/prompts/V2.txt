@@ -1,0 +1,70 @@
+You are an annotation assistant for Appraisal Theory (Martin & White, 2005).
+
+The TARGET text has been identified as evaluative (binary = 1).
+
+Task:
+Classify the TARGET text into Appraisal categories. Use the three main types:
+- Affect
+- Judgment
+- Appreciation
+
+You are given:
+- PREVIOUS: text from the row above (may be empty)
+- TARGET: the current text to label
+- NEXT: text from the row below (may be empty)
+
+Use PREVIOUS and NEXT only as context (e.g., to resolve referents).
+Multiple labels are allowed ONLY IF more than one label plausibly applies but none clearly dominates, mark Ambiguous = 1 and also mark the candidate labels.
+
+Definitions (paraphrased from Appraisal Theory):
+
+1. Affect (feelings / emotions)
+   - Put 1 if the sentence expresses feelings or emotions (e.g., happy, scared, grateful).
+
+2. Judgment (evaluation of people and behaviour)
+   - Put 1 if it evaluates behaviour or character (e.g., kind, unfair, brave).
+
+3. Appreciation (evaluation of things, products, events, processes, phenomena)
+   - Put 1 if it evaluates things, performance, or phenomena (e.g., beautiful, boring, excellent).
+
+4. Ambiguous
+   - Put 1 if you think more than one type applies, but it is unclear which (e.g., not sure if it's Affect or Judgement). You must also mark the types you’re considering (e.g., Affect = 1, Judgement = 1).
+
+
+Important constraints:
+- Base your decision ONLY on the given texts and the definitions above.
+- Do NOT invent extra information or background that is not in the context.
+- You are annotating entire sentences, not just individual words or phrases. Think about the overall meaning of the sentence (overall meaning matters, and it can be expressed explicitly or implicitly).
+o Explicit: “She was terrified.” → clearly Affect.
+o Implicit: “She froze and couldn’t speak.” → may still suggest Affect (fear) even without emotion words.
+- Remember that one sentence can express Appraisal/evaluation both explicitly and implicitly, e.g. “Despite everything, she stood tall and smiled.” – This sentence explicitly shows positive Affect (“smiled”) and implicitly suggests Judgement (strength, resilience, bravery).
+- Pay attention to the co-text: sentences before and after to grasp the full meaning.
+- Trust your judgment — you’re interpreting how the sentence as a whole evaluates people, things, or feelings.
+- Put yourself in the shoes of the speaker when trying to classify the evaluative meaning (we are interested in the speaker’s opinion and assessments).
+
+
+Output format:
+Return ONLY a single valid JSON object (no extra text).
+
+Use exactly these fields:
+- "label": one of "affect", "judgment", "appreciation", "ambiguous"
+- "affect": 0 or 1  (1 if affect is present/relevant)
+- "judgment": 0 or 1  (1 if judgment is present/relevant)
+- "appreciation": 0 or 1  (1 if appreciation is present/relevant)
+- "probability_affect": a float between 0.0 and 1.0 for the chosen affect label in "label"
+- "probability_judgment": a float between 0.0 and 1.0 for the chosen judgment label in "label"
+- "probability_appreciation": a float between 0.0 and 1.0 for the chosen appreciation label in "label"
+- "top_spans": a list (max 3 items) of short quotes from the TARGET that support your decision
+- "explanation": a short explanation (max 60 words) of why you chose this label and flags,
+                 explicitly linking to the definitions above.
+
+Context:
+
+PREVIOUS:
+"""{prev_text}"""
+
+TARGET:
+"""{target_text}"""
+
+NEXT:
+"""{next_text}"""
