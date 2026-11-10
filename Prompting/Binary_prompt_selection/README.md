@@ -24,7 +24,7 @@ Runs the 3 binary prompts on the 70% development split, with all 3 models, and s
 | `outputs/gold_split.csv` | The 70 / 30 split used by every later step |
 | `outputs/evaluative_metrics_summary.csv` | Metrics per model x prompt (`evaluate` writes this as `metrics_summary.csv`) |
 
-In `Final_extra/` (same path): `outputs/pred_<model>_<prompt>.csv` (the raw and parsed answer for each sentence),
+Not included in this repository: `outputs/pred_<model>_<prompt>.csv` (the raw and parsed answer for each sentence),
 `outputs/metrics_by_domain.csv` and `logs/`.
 
 ## Results on all 308 dev sentences (macro-F1)

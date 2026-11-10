@@ -4,7 +4,7 @@ The final zero-shot test on the **held-out 30%**, which no earlier step has seen
 
 1. **Step 1, binary**, prompt **V3**, on every held-out sentence.
 2. **Step 2, appraisal**, prompt **V2**, on the sentences step 1 called evaluative.
-   (Step 2 also runs on the gold-evaluative sentences that step 1 missed, so it can be scored on its own; see `heldout_predictions.csv` in `Final_extra`.)
+   (Step 2 also runs on the gold-evaluative sentences that step 1 missed, so it can be scored on its own; these per-sentence predictions are not included in this repository.)
 
 Runs for each of the 3 models, plus one combination: Mistral for step 1 + Qwen for step 2
 (the best model of each step in `../Prompt_selection`).
@@ -51,7 +51,7 @@ Significance (paired randomization and McNemar tests, Holm-corrected):
 
 Figures and a summary table (`heldout_test_results.csv`) are in `../Figures/` (files starting with "Held-out" or "Heatmap").
 
-In `Final_extra/` (same path): `outputs/pred_<model>.csv` (raw answers for both steps, all 132 held-out sentences),
+Not included in this repository: `outputs/pred_<model>.csv` (raw answers for both steps, all 132 held-out sentences),
 `outputs/results/heldout_predictions.csv` (gold and predicted labels for each sentence, all models), `heldout_results.txt` and `logs/`.
 
 ```bash

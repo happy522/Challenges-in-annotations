@@ -26,7 +26,7 @@ Saved in `outputs/appraisal_split.csv` (all 268 evaluative gold sentences, with 
 | `outputs/appraisal_split.csv` | The evaluative sentences with their split |
 | `outputs/appraisal_metrics_summary.csv` | Metrics per model x prompt (`evaluate` writes this as `metrics_summary.csv`) |
 
-In `Final_extra/` (same path): `outputs/pred_<model>_<prompt>.csv` (the raw and parsed answer for each sentence),
+Not included in this repository: `outputs/pred_<model>_<prompt>.csv` (the raw and parsed answer for each sentence),
 `outputs/metrics_by_domain.csv` and `logs/`.
 
 ## Results on all 190 evaluative dev sentences (multi-label macro-F1)
