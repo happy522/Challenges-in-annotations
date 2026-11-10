@@ -1,7 +1,7 @@
 ﻿step,model,n,gold_noneval,macro_f1,accuracy,cohen_kappa,krippendorff_alpha,macro_f1_diff (ft - zs),p_randomization,p_mcnemar
 Evaluative (binary),Zero-shot,125,,0.807,0.808,0.616,0.616,,,
 Evaluative (binary),Fine-tuned,125,,0.833,0.84,0.668,0.668,0.026,0.525,0.523
-Subclasses (model-evaluative),Zero-shot,63,8,0.554,0.524,0.281,0.258,,,
-Subclasses (model-evaluative),Fine-tuned,79,14,0.558,0.532,0.333,0.324,,,
-Combined (binary + appraisal),Zero-shot,125,,0.568,0.632,0.454,0.45,,,
-Combined (binary + appraisal),Fine-tuned,125,,0.602,0.656,0.516,0.516,0.033,0.531,0.72
+Subclasses (Attitude subsystem),Zero-shot,63,8,0.554,0.524,0.281,0.258,,,
+Subclasses (Attitude subsystem),Fine-tuned,79,14,0.558,0.532,0.333,0.324,,,
+Combined (binary + Attitude subsystem),Zero-shot,125,,0.568,0.632,0.454,0.45,,,
+Combined (binary + Attitude subsystem),Fine-tuned,125,,0.602,0.656,0.516,0.516,0.033,0.531,0.72

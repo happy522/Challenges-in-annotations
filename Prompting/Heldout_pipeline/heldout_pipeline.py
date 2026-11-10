@@ -317,6 +317,12 @@ def evaluate(pred_dir=OUT_DIR, out_dir=None):
             row = {"step": step, "model": model, **step_scores(part[g], part[p], labels)}
             if step == STEP_2:
                 row["gold_noneval"] = int((part["Evaluative"] == 0).sum())
+                # agreement per subclass as in the human annotation study: Krippendorff's alpha
+                # on the sentences that both the gold standard and the model call evaluative
+                both = part[part["Evaluative"] == 1]
+                row["n_both_eval"] = len(both)
+                for c in CATEGORIES:
+                    row[f"alpha_{c}"] = krippendorff_alpha(both["category"] == c, both["pred_category"] == c)
             rows.append(row)
     metrics = pd.DataFrame(rows)
 
@@ -360,7 +366,7 @@ def evaluate(pred_dir=OUT_DIR, out_dir=None):
              f"appraisal {APPRAISAL_PROMPT}, zero-shot ===", "",
              metrics[main_cols].round(3).to_string(index=False), "",
              "Per class", metrics[["step", "model"] + [c for c in metrics.columns
-                                                     if c.startswith(("f1_", "kappa_"))]]
+                                                     if c.startswith(("f1_", "kappa_", "alpha_"))]]
              .round(3).to_string(index=False), "",
              "=== Significance between zero-shot models (paired, same sentences; Holm within: single models, and each combination vs the single models) ===",
              tests.round(4).to_string(index=False), "",

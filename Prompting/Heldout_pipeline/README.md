@@ -40,6 +40,23 @@ Significance (paired randomization and McNemar tests, Holm-corrected):
 - Combined: Mistral beats Llama (+0.134) and Qwen (+0.136), randomization p = 0.037 for both;
   McNemar p = 0.087 for both.
 
+### Agreement with the gold standard (heatmap)
+
+Measured as in the human annotation study: **Cohen's κ** for Evaluative (all 125 sentences) and **Krippendorff's α**
+(nominal) for each subclass, computed on the sentences that **both** the gold standard and the model call evaluative.
+Each subclass is scored as a yes / no label.
+
+| Model | Both evaluative (n) | Evaluative κ | Affect α | Judgement α | Appreciation α |
+|---|---|---|---|---|---|
+| Qwen3-30B | 57 | 0.561 | 0.423 | 0.207 | 0.304 |
+| Llama-3.3-70B | 54 | 0.600 | 0.463 | 0.151 | 0.149 |
+| **Mistral-Large** | 58 | **0.628** | **0.571** | **0.582** | **0.577** |
+| Mistral (binary) + Qwen (appraisal) | 58 | 0.628 | 0.425 | 0.129 | 0.244 |
+| Llama-3.3-70B fine-tuned | 65 | 0.668 | 0.457 | 0.473 | 0.392 |
+
+These are the `cohen_kappa` (step 1) and `alpha_*` / `n_both_eval` (step 2) columns of `heldout_metrics.csv`. The `kappa_*`
+columns there are one-vs-rest Cohen's κ on every sentence the model called evaluative, including gold non-evaluative ones.
+
 ## Files
 
 | File | Content |

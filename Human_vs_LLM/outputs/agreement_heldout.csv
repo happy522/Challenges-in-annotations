@@ -1,0 +1,7 @@
+﻿comparison,pairs,Evaluative (kappa),Evaluative (alpha),pairs_both_evaluative,Affect (alpha),Judgement (alpha),Appreciation (alpha)
+Linguists in training,120,0.272,0.265,43,0.387,0.038,0.397
+Linguists in training and senior researcher,245,0.381,0.382,98,0.37,0.179,0.267
+Llama-3.3-70B fine-tuned and linguists in training,245,0.358,0.354,105,0.462,0.342,0.306
+Llama-3.3-70B fine-tuned and senior researcher,125,0.668,0.668,65,0.457,0.473,0.392
+Llama-3.3-70B zero-shot and linguists in training,245,0.412,0.412,92,0.449,0.238,0.265
+Llama-3.3-70B zero-shot and senior researcher,125,0.616,0.616,55,0.465,0.377,0.243

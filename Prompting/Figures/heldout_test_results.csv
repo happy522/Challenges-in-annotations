@@ -4,13 +4,13 @@ Evaluative (binary),Llama-3.3-70B,125,,0,0.799,0.8,0.6,0.6,Mistral-Large,1.0,1.0
 Evaluative (binary),Mistral-Large,125,,0,0.814,0.816,0.628,0.629,(best zero-shot),,
 Evaluative (binary),Mistral V3 + Qwen V2,125,,0,0.814,0.816,0.628,0.629,Mistral-Large,1.0,1.0
 Evaluative (binary),Llama-3.3-70B fine-tuned,125,,0,0.833,0.84,0.668,0.668,,,
-Subclasses (model-evaluative),Qwen3-30B,70,13,2,0.49,0.457,0.221,0.204,,,
-Subclasses (model-evaluative),Llama-3.3-70B,62,8,2,0.487,0.435,0.165,0.149,,,
-Subclasses (model-evaluative),Mistral-Large,68,10,7,0.671,0.603,0.425,0.42,,,
-Subclasses (model-evaluative),Mistral V3 + Qwen V2,68,10,3,0.48,0.441,0.187,0.175,,,
-Subclasses (model-evaluative),Llama-3.3-70B fine-tuned,79,14,0,0.558,0.532,0.333,0.324,,,
-Combined (binary + appraisal),Qwen3-30B,125,,2,0.519,0.584,0.399,0.398,Mistral-Large,0.037,0.087
-Combined (binary + appraisal),Llama-3.3-70B,125,,2,0.521,0.584,0.384,0.382,Mistral-Large,0.037,0.087
-Combined (binary + appraisal),Mistral-Large,125,,7,0.655,0.68,0.536,0.536,(best zero-shot),,
-Combined (binary + appraisal),Mistral V3 + Qwen V2,125,,3,0.527,0.592,0.407,0.407,Mistral-Large,0.055,0.058
-Combined (binary + appraisal),Llama-3.3-70B fine-tuned,125,,0,0.602,0.656,0.516,0.516,,,
+Subclasses (Attitude subsystem),Qwen3-30B,70,13,2,0.49,0.457,0.221,0.204,,,
+Subclasses (Attitude subsystem),Llama-3.3-70B,62,8,2,0.487,0.435,0.165,0.149,,,
+Subclasses (Attitude subsystem),Mistral-Large,68,10,7,0.671,0.603,0.425,0.42,,,
+Subclasses (Attitude subsystem),Mistral V3 + Qwen V2,68,10,3,0.48,0.441,0.187,0.175,,,
+Subclasses (Attitude subsystem),Llama-3.3-70B fine-tuned,79,14,0,0.558,0.532,0.333,0.324,,,
+Combined (binary + Attitude subsystem),Qwen3-30B,125,,2,0.519,0.584,0.399,0.398,Mistral-Large,0.037,0.087
+Combined (binary + Attitude subsystem),Llama-3.3-70B,125,,2,0.521,0.584,0.384,0.382,Mistral-Large,0.037,0.087
+Combined (binary + Attitude subsystem),Mistral-Large,125,,7,0.655,0.68,0.536,0.536,(best zero-shot),,
+Combined (binary + Attitude subsystem),Mistral V3 + Qwen V2,125,,3,0.527,0.592,0.407,0.407,Mistral-Large,0.055,0.058
+Combined (binary + Attitude subsystem),Llama-3.3-70B fine-tuned,125,,0,0.602,0.656,0.516,0.516,,,

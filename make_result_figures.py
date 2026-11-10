@@ -36,14 +36,16 @@ MODELS = {
 }
 FINETUNED = ("llama-3.3-70b-instruct (fine-tuned)", "Llama-3.3-70B fine-tuned", "#8172B2", "..")
 # first two words of the step names in the result files -> axis label
-STEP_NAMES = {"1 binary": "Evaluative\n(binary)", "2 appraisal": "Subclasses\n(model-evaluative)",
-              "combined binary": "Combined\n(binary + appraisal)"}
+STEP_NAMES = {"1 binary": "Evaluative\n(binary)", "2 appraisal": "Subclasses\n(Attitude subsystem)",
+              "combined binary": "Combined\n(binary + Attitude subsystem)"}
 SETUPS = {  # fine-tuning comparison
     "zeroshot": ("Zero-shot", "#55A868", "\\\\"),
     "finetuned": ("Fine-tuned", "#8172B2", ".."),
 }
 CATEGORIES = ["affect", "judgment", "appreciation"]
 CAT_NAMES = ["Affect", "Judgement", "Appreciation"]
+# heatmap columns: the same measures as the human agreement study
+AGREEMENT_COLS = ["Evaluative (κ)"] + [f"{c} (α)" for c in CAT_NAMES]
 BINARY_PROMPT, APPRAISAL_PROMPT = "V3", "V2"
 DPI = 600
 
@@ -200,13 +202,14 @@ def heldout_test():
                  "F1-score", os.path.join(OUT_PROMPT, f"Held-out test results for the subclasses Affect, Judgement, and Appreciation (prompt {APPRAISAL_PROMPT}).png"),
                  legend_loc="above" if combos else "upper right")
 
-    # agreement with the gold standard
-    kappa = np.array([[res.loc[("1 binary", m), "cohen_kappa"]]
-                      + [res.loc[("2 appraisal", m), f"kappa_{c}"] for c in CATEGORIES] for m in models + combos])
-    heatmap(kappa, [MODELS[m][1] for m in models]
-            + ["+".join(MODELS[x][1] for x in c.split(" + ")) for c in combos], ["Evaluative"] + CAT_NAMES,
+    # agreement with the gold standard, as in the human study: Cohen's kappa for Evaluative,
+    # Krippendorff's alpha per subclass on the sentences both gold and model call evaluative
+    agreement = np.array([[res.loc[("1 binary", m), "cohen_kappa"]]
+                          + [res.loc[("2 appraisal", m), f"alpha_{c}"] for c in CATEGORIES] for m in models + combos])
+    heatmap(agreement, [MODELS[m][1] for m in models]
+            + ["+".join(MODELS[x][1] for x in c.split(" + ")) for c in combos], AGREEMENT_COLS,
             os.path.join(OUT_PROMPT, "Heatmap for the agreement between gold standard and LLMs (held-out test).png"),
-            vmin=0.0, vmax=0.8)
+            vmin=0.0, vmax=0.8, label="Agreement with gold")
 
     # table: scores + significance against the best zero-shot model of each step
     sig = pd.read_csv(os.path.join(HELDOUT, "heldout_significance.csv"))
@@ -255,11 +258,27 @@ def binary_metrics(df):
             "kappa_evaluative": cohen_kappa_score(gold, pred)}
 
 
-def category_kappas(df):
-    """One-vs-rest kappa per subclass on the sentences the model called evaluative (step 2)."""
-    passed = df[df["pred_binary"] == 1]
-    gold, pred = passed["label4"].fillna("none"), passed["pred_category"].fillna("invalid")
-    return {f"kappa_{c}": cohen_kappa_score(gold == c, pred == c) for c in CATEGORIES}
+def krippendorff_alpha(a, b):
+    """Krippendorff's alpha (nominal), two raters, no missing values."""
+    a, b = np.asarray(a).astype(str), np.asarray(b).astype(str)
+    labels = np.unique(np.concatenate([a, b]))
+    if len(labels) < 2:
+        return 1.0
+    idx = {l: i for i, l in enumerate(labels)}
+    o = np.zeros((len(labels), len(labels)))
+    for x, y in zip(a, b):
+        o[idx[x], idx[y]] += 1
+        o[idx[y], idx[x]] += 1
+    n_c = o.sum(axis=1)
+    n = n_c.sum()
+    return 1 - (n - 1) * (o.sum() - np.trace(o)) / (n ** 2 - (n_c ** 2).sum())
+
+
+def category_alphas(df):
+    """Krippendorff's alpha per subclass on the sentences both gold and model call evaluative."""
+    both = df[(df["pred_binary"] == 1) & (df["Evaluative"] == 1)]
+    gold, pred = both["label4"].fillna("none"), both["pred_category"].fillna("invalid")
+    return {f"alpha_{c}": krippendorff_alpha(gold == c, pred == c) for c in CATEGORIES}
 
 
 def fine_tuning():
@@ -283,7 +302,7 @@ def fine_tuning():
                      pvalues=pvals if metric == "macro_f1" else None)
 
     preds = {k: ft_predictions(k) for k in SETUPS}
-    extra = {k: {**binary_metrics(d), **category_kappas(d)} for k, d in preds.items()}
+    extra = {k: {**binary_metrics(d), **category_alphas(d)} for k, d in preds.items()}
 
     # binary: same four metrics as the evaluative-class figure
     metrics = [("accuracy", "Accuracy"), ("precision_eval", "Precision (eval)"),
@@ -299,11 +318,12 @@ def fine_tuning():
                   for k, (lab, col, hat) in SETUPS.items()],
                  "F1-score", os.path.join(OUT_FT, "Fine-tuning results for the subclasses Affect, Judgement, and Appreciation.png"))
 
-    # agreement heatmap
-    kappa = np.array([[extra[k]["kappa_evaluative"]] + [extra[k][f"kappa_{c}"] for c in CATEGORIES] for k in SETUPS])
-    heatmap(kappa, [lab for lab, _, _ in SETUPS.values()], ["Evaluative"] + CAT_NAMES,
+    # agreement heatmap (Cohen's kappa for Evaluative, Krippendorff's alpha per subclass)
+    agreement = np.array([[extra[k]["kappa_evaluative"]] + [extra[k][f"alpha_{c}"] for c in CATEGORIES]
+                          for k in SETUPS])
+    heatmap(agreement, [lab for lab, _, _ in SETUPS.values()], AGREEMENT_COLS,
             os.path.join(OUT_FT, "Heatmap for the agreement between gold standard and Llama-3.3-70B (zero-shot vs fine-tuned).png"),
-            vmin=0.2, vmax=0.8)
+            vmin=0.0, vmax=0.8, label="Agreement with gold")
 
     # validation macro-F1 per epoch (best epoch is kept)
     fig, ax = plt.subplots(figsize=(6.2, 3.45))

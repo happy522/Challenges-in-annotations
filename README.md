@@ -21,6 +21,7 @@ and Llama-3.3-70B-Instruct fine-tuned with QLoRA.
 | [Data/](Data/) | The gold standard (440 sentences, senior researcher's labels) with the previous / next sentence as context |
 | [Prompting/](Prompting/) | Zero-shot prompt selection (3 prompts x 3 models) on 70% of the data, then the final test of the winning prompts on the held-out 30% |
 | [Finetuning/](Finetuning/) | QLoRA fine-tuning of Llama-3.3-70B on the same 70% and its test on the same held-out 30% |
+| [Human_vs_LLM/](Human_vs_LLM/) | Agreement between linguists in training, the senior researcher and fine-tuned Llama on the held-out test set (Cohen's κ / Krippendorff's α + heatmap) |
 | [make_result_figures.py](make_result_figures.py) | Builds every figure and summary table in `Prompting/Figures/` and `Finetuning/Figures/` from the saved results |
 
 Each experiment folder has its own README with the exact number of sentences used.
