@@ -1,6 +1,6 @@
 # Data
 
-`gold_standard_with_context.csv`: the gold standard annotated by the senior researcher.
+`gold_standard_with_context.csv`: the gold standard annotated by the trained linguist.
 Every experiment in `Prompting/` and `Finetuning/` reads this file.
 
 ## Contents
